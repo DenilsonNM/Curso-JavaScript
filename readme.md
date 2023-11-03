@@ -29,4 +29,30 @@
 <h1 onclick="alert('Esta es una alerta de JS en linea HTML')">haz click sobre este texto</h1>
 ...
 ```
-## En
+## En etiqueta <Script>
+```
+<!DOCTYPE html>
+...
+<script type="text/javascript">
+  alert('esta es una alerta usando etiqueta Script')
+</script>
+...
+```
+
+## En un archivo aparte codigo.js
+index.html
+```
+<!DOCTYPE html>
+...
+<script src="codigo.js"></script>
+...
+```
+codigo.js
+```
+alert('esta es una alerta usando etiqueta Script y un archivo JS')
+```
+## En un Require
+```
+```
+#Variables
+
