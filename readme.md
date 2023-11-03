@@ -10,3 +10,23 @@
 - Basado en protipos/ instancias/ Clases (basados en otros onjetos previamente construidos por el equipo desarrollador del lenguaje)
 - Tipado débil (el valor de las variables pueden cambiar o sobreescribirse de tipos de datos distintos)
 - Lenguaje Dinamico (el dato se ajusta a la variable)
+
+# ¿Para que se usa?
+- Dinamismo en sitios web (mas comun, y del lado del cliente)
+- Servidor en NodeJS
+- Tecnologias Frontend (Angular, React, Vue.js, etc)
+## Otros usos
+- IA (raro)
+- Placas electronicas (Jhonny Five)
+- Mobile Apps
+- Desktop Apps
+
+# Enlazar JavaScript a otra tecnologia
+## En linea HTML
+```
+<!DOCTYPE html>
+...
+<h1 onclick="alert('Esta es una alerta de JS en linea HTML')">haz click sobre este texto</h1>
+...
+```
+## En
