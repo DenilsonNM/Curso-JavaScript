@@ -54,5 +54,5 @@ alert('esta es una alerta usando etiqueta Script y un archivo JS')
 ## En un Require
 ```
 ```
-#Variables
-
+# Variables
+espacios que guardamos en memoria
