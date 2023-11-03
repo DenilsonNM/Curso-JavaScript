@@ -55,4 +55,32 @@ alert('esta es una alerta usando etiqueta Script y un archivo JS')
 ```
 ```
 # Variables
-espacios que guardamos en memoria
+espacios que guardamos en memoria y que contienen un dato que puede cambiar
+## Ejemplo
+`recipiente` es la variable, `"papel"` es un tipo de texto String que esta dentro, usando la funcion `alert()` mostramos en forma de alerta que es lo que esta dentro de `recipiente`
+```
+recipiente = "agua";
+alert(recipiente)
+```
+
+## Tipos de datos
+
+### Cadena de texto
+```
+strg = "hola soy una cadena de texto"
+strg = 'hola soy una cadena de texto'
+strg = `hola soy una cadena de texto`
+```
+### Número
+```
+num = 1
+num = 20
+num = 3.5
+num = 40000
+...
+```
+### Boleano
+```
+bol = true || bol = 1
+bol = false || bol = 0
+```
