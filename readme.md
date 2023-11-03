@@ -54,6 +54,7 @@ alert('esta es una alerta usando etiqueta Script y un archivo JS')
 ## En un Require
 ```
 ```
+---
 # Variables
 espacios que guardamos en memoria y que contienen un dato que puede cambiar
 ## Ejemplo
@@ -67,73 +68,134 @@ alert(recipiente)
 
 ### Cadena de texto
 ```
-strg = "hola soy una cadena de texto"
-strg = 'hola soy una cadena de texto'
-strg = `hola soy una cadena de texto`
+"hola soy una cadena de texto"
+'hola soy una cadena de texto'
+`hola soy una cadena de texto`
 ```
 ### Número
 ```
-num = 1
-num = 20
-num = 3.5
-num = 40000
+1
+20
+3.5
+40000
 ...
 ```
 ### Booleano
 ```
-bol = true
-bol = 1
-bol = false
-bol = 0
+true
+1
+false
+0
 ```
 ### Especiales
 donde la variable no esta definida o hay un error
-- undefined
-- null
-- nan
+- Undefined
+- Null
+- NaN
 
-## Formas de declarar variables
+## Formas de declarar variables y su scope (ámbito o alcance)
 
-### var
-Para variables publicas/globales
+### - var
+Para variables **publicas/globales**
 ```
+var numero;
+numero = 31;
+alert(numero);
 ```
-### let
-Para variables dentro de un bloque
+muestra el numero en forma de alerta
+```
+var numero = 31;
+alert(numero);
+```
+otra forma de declaración y también muestra el numero en forma de alerta
+```
+var numero = 31;
+numero = 10;
+alert(numero);
+```
+se modifica `numero` y muestra el nuevo valor
+```
+var numero;
+alert(numero);
+```
+muestra el tipo de dato `undefined` porque `numero` no esta declarada/no tiene un valor
+
+### - let
+Para variables dentro de un **bloque**; fuera de este, la variable no existe
 ```
 let numero;
-numero = 31
-alert(numero)
+numero = 31;
+alert(numero);
 ```
 muestra el numero en forma de alerta
 ```
 let numero = 31;
-alert(numero)
+alert(numero);
 ```
 otra forma de declaración y también muestra el numero en forma de alerta
 ```
 let numero = 31;
-numero = 10
-alert(numero)
+numero = 10;
+alert(numero);
 ```
 se modifica `numero` y muestra el nuevo valor
 ```
 let numero;
-alert(numero)
+alert(numero);
 ```
 muestra el tipo de dato `undefined` porque `numero` no esta declarada/no tiene un valor
-### const
-Para variables que permanecen con su valor definido/no cambian
+
+### - const
+Para variables que permanecen con su valor **definido/no cambian**
 ```
-const saludo = "hola"
-alert(saludo)
+const saludo = "hola";
+alert(saludo);
 ```
 nos muestra una alerta con el valor la constante
 ```
-const saludo = "hola"
+const saludo = "hola";
 saludo = "adios"
-alert(saludo)
+alert(saludo);
 ```
-nos muestra un error, porque las variables que son declaradas como `const` no deben ni pueden cambiarse después de declararse
+nos muestra un error en consola, porque las variables que son declaradas como `const` no deben ni pueden cambiarse después de declararse
+```
+const saludo;
+saludo = "adios";
+alert(saludo);
+```
+nos muestra un error en consola, porque las variables que son declaradas como `const` solo se pueden inicializar cuando se declaran y NO después como en `let`
+
+### Multiples variables en una linea
+```
+let numero, numero2, numero3;
+
+numero = 1;
+numero2 = 2;
+numero3 = 3;
+
+alert(numero);
+alert(numero2);
+alert(numero3);
+```
+nos muestra los valores de cada variable en forma de alerta, uno después de otro
+```
+let numero = 1, numero2 = 2, numero3 = 3;
+
+alert(numero);
+alert(numero2);
+alert(numero3);
+```
+otra forma de declarar y nos muestra los valores de cada variable en forma de alerta, uno después de otro
+
+### - Null
+variable nula, se declara para indicar que no es `undefined` y que tendrá el valor de **nulo**
+```
+let numero = null;
+
+```
+### - NaN
+
+## Hoisting
+formas de ejecución y de escritura del código donde se pueden ejecutar antes o después de una declaración
 
 
